@@ -6,8 +6,6 @@ screen = tkinter.Tk()
 mouse = MouseController()
 keyboard = KeyController()
 
-#print('The current pointer position is {0}'.format(mouse.position))
-
 while True:
     x = mouse.position[0]
     if x == 0:
@@ -24,4 +22,3 @@ while True:
         keyboard.release(Key.ctrl)
         keyboard.release(Key.cmd)
         keyboard.release(Key.right)
-
