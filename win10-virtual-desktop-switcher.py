@@ -9,6 +9,7 @@ keyboard = KeyController()
 while True:
     x = mouse.position[0]
     y = mouse.position[1]
+    time.sleep(0.1)
     if x == 0 and screen.winfo_screenheight()-150 > y > 150:
         keyboard.press(Key.ctrl)
         keyboard.press(Key.cmd)
@@ -16,7 +17,6 @@ while True:
         keyboard.release(Key.ctrl)
         keyboard.release(Key.cmd)
         keyboard.release(Key.left)
-        time.sleep(3)
     elif x == screen.winfo_screenwidth()-1 and screen.winfo_screenheight()-150 > y > 150:
         keyboard.press(Key.ctrl)
         keyboard.press(Key.cmd)
@@ -24,4 +24,3 @@ while True:
         keyboard.release(Key.ctrl)
         keyboard.release(Key.cmd)
         keyboard.release(Key.right)
-        time.sleep(3)
